@@ -5,7 +5,8 @@
  
 <body>
     <div>
-        <p id="result"></p>
+       
+        <table align='center'><tr><td style='background-color:#9833cc;border-radius:6px;padding:10px 20px;'><a style='color:#41dca3;text-decoration:none;font-weight:bold;'  <p id="result"></p></a></td></tr></table>
     </div>
     <script>
         $(document).ready(()=>{
@@ -13,7 +14,7 @@
             // ipinfo for getting the ip address
             $.getJSON("https://ipinfo.io",
             function (response) {
-                $('#result').html(`IP Address: ${response.ip}`)
+                $('#result').html(`Adresa IP: ${response.ip}`)
             }, "jsonp");
         })  
     </script> </h3></body>
