@@ -1,1 +1,21 @@
-<html><title>OK</title><body><table align='center'><tr><td style='background-color:#9833cc;border-radius:6px;padding:10px 20px;'><a style='color:#41dca3;text-decoration:none;font-weight:bold;' href='https://rcor.ro'>Test reușit!</a></td></tr></table><h3 align='center'>🛡 Acest protocol este unul sigur și nu colectează nicio informație cu caracter personal, fiind GDPR compliant. Copyright © rcor.ro <p id="datetime"> </p> <script>  var now = new Date();var datetime = now.toLocaleString();document.getElementById("datetime").innerHTML = datetime;</script> </h3></body></html>"
+<html><title>OK</title><body><table align='center'><tr><td style='background-color:#9833cc;border-radius:6px;padding:10px 20px;'><a style='color:#41dca3;text-decoration:none;font-weight:bold;' href='https://rcor.ro'>Test reușit!</a></td></tr></table><h3 align='center'>🛡 Acest protocol este unul sigur și nu colectează nicio informație cu caracter personal, fiind GDPR compliant. Copyright © rcor.ro <p id="datetime"> </p> <script>  var now = new Date();var datetime = now.toLocaleString();document.getElementById("datetime").innerHTML = datetime;</script> <script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    </script>
+</head>
+ 
+<body>
+    <div>
+        <p id="result"></p>
+    </div>
+    <script>
+        $(document).ready(()=>{
+            // Use "https://ipinfo.io" link to use the
+            // ipinfo for getting the ip address
+            $.getJSON("https://ipinfo.io",
+            function (response) {
+                $('#result').html(`IP Address: ${response.ip}`)
+            }, "jsonp");
+        })  
+    </script> </h3></body>
+    
+</html>
